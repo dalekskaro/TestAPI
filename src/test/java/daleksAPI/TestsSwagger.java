@@ -74,7 +74,7 @@ public class TestsSwagger {
                 .header("accept", "application/json")
                 .body(request.toJSONString())
         .when()
-                .put("https://petstore.swagger.io/v2/user/Solas")
+                .put("https://petstore.swagger.io/v2/user/123Solas123")
         .then().log().body()
         .assertThat().statusCode(200);
     }
